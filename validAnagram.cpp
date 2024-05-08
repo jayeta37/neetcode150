@@ -6,29 +6,24 @@ using namespace std;
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        unordered_map<char, int> s_map;
-        unordered_map<char, int> t_map;
+        if (s.length() != t.length()){
+            return false;
+        }
 
-        for(auto char_s : s){
-            if(s_map.find(char_s) != s_map.end()){
-                s_map[char_s]++;
-            }
-            else{
-                s_map[char_s] = 0;
+        int s_array[26] = {0};
+        int t_array[26] = {0};
+
+        for(int i = 0; i<s.length(); i++){
+            s_array[s[i] - 'a']++;
+            t_array[t[i] - 'a']++;
+        }
+
+        for(int i=0; i < 26; i++){
+            if(s_array[i] != t_array[i]){
+                return false;
             }
         }
-        for(auto char_t : t){
-            if(t_map.find(char_t) != t_map.end()){
-                t_map[char_t]++;
-            }
-            else{
-                t_map[char_t] = 0;
-            }
-        }
-        if(s_map == t_map){
-            return true;
-        }
-        return false;
+        return true;
     }
 };
 
