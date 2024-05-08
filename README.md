@@ -24,9 +24,8 @@ Each folder corresponds to a specific topic and contains solutions related to th
 You can clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/<your-github-username>/leetcode-solutions-cpp.git
-cd leetcode-solutions-cpp
-Replace <your-github-username> with your actual GitHub username.
+git clone https://github.com/jayeta37/neetcode150.git
+cd neetcode150s
 ```
 
 ## How to Use This Repository
