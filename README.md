@@ -9,13 +9,24 @@ LeetCode is a platform dedicated to helping technology professionals sharpen the
 ## Repository Structure
 
 This repository is organized by problem areas such as:
-- Arrays
-- Strings
-- Linked Lists
+- Arrays & Hashings
+- Two Pointers
+- Sliding Window
+- Stack
+- Binary Search
+- Linked List
 - Trees
+- Heap / Priority Queue
+- Backtracking
+- Tries
 - Graphs
-- Dynamic Programming
-- Sorting and Searching
+- Advanced Graphs
+- 1-D Dynamic Programming
+- 2-D Dynamic Programming
+- Greedy
+- Intervals
+- Math & Geometry
+- Bit Manipulation
 
 Each folder corresponds to a specific topic and contains solutions related to that topic.
 
