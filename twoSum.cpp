@@ -12,8 +12,8 @@ using namespace std;
 class Solution{
     public:
     vector<int> twoSum(vector<int> &nums, int target){
-        for(int i = 0; i < nums.size(), i++){
-            for(int j = i+1; j < nums.size(), j++){
+        for(int i = 0; i < nums.size(); i++){
+            for(int j = i+1; j < nums.size(); j++){
                 if(nums[i] + nums[j] == target){
                     return {i, j};
                 }
@@ -23,3 +23,25 @@ class Solution{
     }
 };
 
+void testTwoSums(vector<int> &nums, int target, vector<int> &expected){
+    Solution solution;
+    vector<int> result = solution.twoSum(nums, target);
+    cout << "Expected: " << expected[0] << ", " << expected[1] << "\t" << "Result: " << result[0] << ", " << result[1] << endl;
+}
+
+int main(){
+    vector<int> nums1, res1, nums2, res2, nums3, res3;
+    nums1 = {2, 7, 11, 15};
+    res1 = {0, 1};
+
+    nums2 = {3,2,4};
+    res2 = {1,2};
+
+    nums3 = {3,3};
+    res3 = {0,1};
+
+    testTwoSums(nums1, 9, res1);
+    testTwoSums(nums2, 6, res2);
+    testTwoSums(nums3, 6, res3);
+    return 0;
+}
